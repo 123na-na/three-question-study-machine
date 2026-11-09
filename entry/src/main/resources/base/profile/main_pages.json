@@ -1,0 +1,12 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/HomePage",
+    "pages/CourseDetailPage",
+    "pages/LearningSessionPage",
+    "pages/LearningReportPage",
+    "pages/ProgressDashboardPage",
+    "pages/ReviewSessionPage",
+    "pages/LoginPage"
+  ]
+}

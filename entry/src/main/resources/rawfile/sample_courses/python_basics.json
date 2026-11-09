@@ -1,0 +1,55 @@
+{
+  "name": "Python编程基础",
+  "description": "掌握Python基础语法、数据结构、函数和面向对象编程",
+  "is_sample": true,
+  "knowledge_points": [
+    {
+      "title": "变量与数据类型",
+      "content": "Python中变量无需声明类型，通过赋值自动确定。基本数据类型包括：int（整数）、float（浮点数）、str（字符串）、bool（布尔值）。Python是动态类型语言，变量可以随时改变类型。使用type()函数查看变量类型。"
+    },
+    {
+      "title": "条件判断与循环",
+      "content": "条件判断使用if-elif-else结构，注意缩进表示代码块。循环有for循环（遍历序列）和while循环（条件循环）。for循环常配合range()函数使用。break跳出循环，continue跳过当前迭代。列表推导式是简洁的循环表达方式。"
+    },
+    {
+      "title": "函数定义与调用",
+      "content": "使用def关键字定义函数。函数可以接收参数（位置参数、默认参数、关键字参数），可以返回值。函数是一等对象，可以作为参数传递、作为返回值。Lambda表达式创建匿名函数。文档字符串(docstring)用于说明函数用途。"
+    },
+    {
+      "title": "列表与元组",
+      "content": "列表(list)是可变序列，使用方括号[]创建，支持增删改查操作。元组(tuple)是不可变序列，使用圆括号()创建，更安全但灵活性低。切片操作[start:stop:step]用于获取子序列。列表常用方法：append、insert、pop、sort等。"
+    },
+    {
+      "title": "字典与集合",
+      "content": "字典(dict)是键值对映射，使用花括号{}创建，查找效率高O(1)。集合(set)是无序不重复元素集，用于去重和集合运算（交、并、差）。字典方法：get、keys、values、items。集合方法：add、remove、union、intersection。"
+    },
+    {
+      "title": "字符串操作",
+      "content": "字符串是不可变序列，支持索引和切片。常用方法：split（分割）、join（合并）、replace（替换）、find（查找）、strip（去除空白）。格式化方法：f-string（推荐）、format方法、%格式化。字符串支持+拼接和*重复。"
+    },
+    {
+      "title": "文件读写操作",
+      "content": "使用open()函数打开文件，指定模式：r(读)、w(写)、a(追加)、b(二进制)。with语句自动管理文件关闭。read()读全部内容，readline()读一行，readlines()读所有行到列表。write()写入字符串，writelines()写入列表。"
+    },
+    {
+      "title": "面向对象编程",
+      "content": "类(class)是对象的蓝图，包含属性和方法。__init__是构造方法，self引用当前实例。继承用class Child(Parent)，子类获得父类所有属性方法。封装通过_和__前缀控制访问权限。多态通过方法重写实现不同行为。"
+    },
+    {
+      "title": "异常处理",
+      "content": "try-except捕获和处理异常，避免程序崩溃。可以捕获特定异常类型：ValueError、TypeError、FileNotFoundError等。else块在无异常时执行，finally块始终执行。raise主动抛出异常。自定义异常继承Exception类。"
+    },
+    {
+      "title": "模块与包",
+      "content": "模块(module)是一个.py文件，使用import导入。可以import整个模块或from module import特定对象。包(package)是包含__init__.py的目录，组织多个模块。pip是包管理工具，安装第三方库如numpy、pandas、requests等。"
+    },
+    {
+      "title": "迭代器与生成器",
+      "content": "迭代器实现__iter__和__next__方法，逐个返回元素。生成器使用yield关键字暂停和恢复函数执行，延迟计算节省内存。生成器表达式类似列表推导式但用圆括号。itertools模块提供高效迭代工具：chain、zip_longest等。"
+    },
+    {
+      "title": "装饰器",
+      "content": "装饰器是修改函数行为的高级工具，本质上是一个接收函数并返回新函数的函数。使用@语法糖应用装饰器。常见用途：日志记录、性能计时、权限验证、缓存。装饰器可以叠加使用，执行顺序从下到上。 functools.wraps保留原函数信息。"
+    }
+  ]
+}

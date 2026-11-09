@@ -1,0 +1,9 @@
+# 构建上下文排除项：保持镜像精简、避免本地文件泄漏
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+*.log
+tests/
+.git/

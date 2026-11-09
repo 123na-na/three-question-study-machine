@@ -1,0 +1,22 @@
+# 三问学习机 Backend 中间层 Docker Compose
+# 使用方式（在本目录下执行）：
+#   1. cp .env.example .env   （填入 DEEPSEEK_API_KEY）
+#   2. docker compose up -d --build
+#   3. 验证: http://localhost:8000/api/v1/health
+services:
+  study-machine-backend:
+    build: .
+    container_name: study-machine-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/api/v1/health', timeout=3).status==200 else 1)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
